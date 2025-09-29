@@ -99,8 +99,8 @@ fn main_game(dt: f32) void {
     State.UI_elements.Timer.draw();
     rl.endDrawing();
 
-    // If some conditions are met, we change the next scene 145
-    if (State.GlobalData.time_survived >= 5.0) {
+    // If some conditions are met, we change the next scene
+    if (State.GlobalData.time_survived >= 145.0) {
         Data.intro = true;
         rl.stopMusicStream(State.Sounds.background_music);
         next_scene = victory;
